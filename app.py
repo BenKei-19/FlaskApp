@@ -5,6 +5,12 @@ from ultralytics import YOLO
 
 app = Flask(__name__)
 
+# Thêm route cho favicon
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                              'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
 model = YOLO('models/best.pt')
 model.eval()
 
@@ -35,4 +41,3 @@ def index():
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8080)) 
     app.run(host="0.0.0.0", port=port)
-
