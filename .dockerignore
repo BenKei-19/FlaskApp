@@ -1,0 +1,8 @@
+__pycache__/
+*.pt
+*.jpg
+*.png
+Images/
+*.zip
+.venv/
+.git/
