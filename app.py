@@ -30,6 +30,7 @@ def index():
 
         results = model(image_path)
         result_image = results[0].plot()
+        result_image_rgb = result_image[..., ::-1]
         result_pil = Image.fromarray(result_image)
         output_path = os.path.join('static/Images', 'result_' + filename)
         result_pil.save(output_path)
