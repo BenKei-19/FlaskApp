@@ -1,6 +1,6 @@
 # [PROJECT] Object Detection with YOLO + Flask + Railway
 
-## [Server] To test the server, you can visit [this page](https://flaskapp-production-4f78.up.railway.app/) 
+## [Server] To test the server, you can visit [this page](https://flaskapp-production-f41e.up.railway.app/) 
 
 ## Introduction
 
